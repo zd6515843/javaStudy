@@ -1,3 +1,40 @@
 java
 selenium with java
 jars
+
+
+Skills Framework
+
+Core Skills:
+  Deep knowledge of Java
+  Good knowledge of Maven
+  Knowledge of test automation pyramid
+  Knowledge of Docker containers
+  Knowledge of SOA and Micro service architectures
+  LWC web services framework
+
+Good-to-Haves:
+  Cloud skills
+  Frontend frameworks
+  Web frameworks
+
+
+TESTABILITY:
+  Ability to write effective Unit Tests
+  Ability to write effective Configuration Tests
+  Ability to write effective Component Tests
+  Ability to write effective Integration Tests
+  Ability to write effective Security Tests
+  Ability to write effective Deployment Tests
+  Ability to write effective Functional Tests
+  Ability to write effective Performance Tests
+  Ability to write effective Pen Test
+  Ability to stub/mock dependencies
+
+ALM TOOLS & INTEGRATIONS:
+Jenkins -> JIRA (for a commit identify a story)
+Jenkins -> Stash
+JIRA -> Jenkins
+JIRA -> Stash
+Stash -> Jenkins
+Stash -> JIRA
