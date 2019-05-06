@@ -14,6 +14,7 @@ public class Expedia {
 	String checkin = "11/01/2019";
 	String checkout = "11/08/2019";
 	String numOfChild= "2";
+	String stars= "star-3";//4 star
 	
 	@Test
 	public void hotelReservation() {
@@ -29,8 +30,14 @@ public class Expedia {
 		new Select(driver.findElement(By.cssSelector("#traveler-selector-hp-hotel select[data-gcw-storeable-name='gcw-child-age-1-1']"))).selectByValue(numOfChild);
 		driver.findElement(By.cssSelector("#gcw-hotel-form-hp-hotel button[type='submit']")).click();
 		
+		String cityName = driver.findElement(By.cssSelector("button[data-stid=hotels-destination-dialog-trigger]")).getText();
+		// print city name
+		System.out.println("CITY: " + cityName);
+		
 		
 		// 2. Modify the search result page, give criteria
+		driver.findElement(By.id(stars)).click();
+//		driver.findElements(By.cssSelector(".property-class-input.all-grid-nowrap.uitk-grid span")).get(3).click();
 		
 		// 3. Analyze the result and make our selection
 
@@ -44,8 +51,8 @@ public class Expedia {
 	@BeforeMethod
 	public void setUp() {
 		driver = utilities.DiverFactory.open(browserType);
+		driver.manage().window().maximize();
 		driver.get("https://www.expedia.com/");
-		
 	}
 	
 	@AfterMethod
